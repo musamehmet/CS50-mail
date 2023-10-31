@@ -1,0 +1,67 @@
+{% extends "mail/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="container-fluid d-flex mt-3 align-items-center header">
+
+        <div class="col d-flex align-items-center justfity-content-between" >
+            <h1 style="color:#1336b5; text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">Mail</h1>
+            <img class="mx-3" src="/static/images/logo.png">            
+        </div>
+        <div class="d-flex align-items-center">
+            <strong class="mx-3" style="color:#1336b5"> {{ request.user.email }}</strong>
+         <a href="{% url 'logout' %}"><button class="btn btn-sm btn-outline-danger">Log out</button></a>
+         </div>
+    </div>
+    <hr>
+
+    <div class="container-fluid main p-0">
+        <div class="head d-flex align-items-center" style="height:50px">
+            <div class="col-2 d-flex center-text align-items-center welcome-visitor"><button type="button" class="btn btn-primary mx-auto compose-btn" id="compose">Compose</button></div>
+            <div class="col-10 d-flex align-items-center content-header" id="page-header">Page Header</div>
+        </div>
+        <div class="container-fluid body d-flex p-0">
+            <div class="col-2  p-0" style="background: #417CC2; height:auto;">
+                <div class="d-flex justify-content-middle">
+                    
+                </div>
+                
+                <div class="side-element p-2" id="inbox">Inbox</div>
+                <div class="side-element p-2" id="sent">Sent</div>
+                <div class="side-element p-2" id="archived">Archived</div>
+            </div>
+            <div class="col-10 p-0">
+                <div id="emails-view">
+                </div>
+            
+                <div id="email-detail-view" class="email-detail-view-area p-0 m-0">
+                </div>     
+                <div id="compose-view">
+                    
+                    <form id="compose-form" class="p-3">
+                        <div class="form-group">
+                            <div class="form-content d-flex align-items-center form-from">From: <div>{{ request.user.email }}</div></div>
+                        </div>
+                        <div class="form-group">
+                            <input id="compose-recipients" class="form-control" placeholder="To">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="compose-subject" placeholder="Subject">
+                        </div>
+                        <textarea class="form-control" id="compose-body"></textarea>
+                        <button type="submit" class="btn btn-primary my-3">Send</button>
+                    </form>
+                </div>           
+            </div>
+        </div>
+        
+    </div>
+
+   
+
+  
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'mail/inbox.js' %}"></script>
+{% endblock %}

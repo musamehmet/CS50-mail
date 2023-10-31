@@ -1,0 +1,173 @@
+textarea {
+    min-height: 400px;
+}
+
+
+.read {
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 0.5px solid #d9d9d9;
+    font-weight: 300;
+    background-color: #f5f5f5;
+
+    .a {
+        font-weight: 800;
+    }
+}
+
+.unread {
+    font-weight: 600;
+    padding: 0;
+    border-top: 0.5px solid #d9d9d9;
+    background-color: white;
+
+    .a {
+        font-weight: 300;
+    }
+}
+
+.read:hover,
+.unread:hover {
+    background-color: rgba(30, 143, 255, 0.466);
+}
+
+body {
+    background-color: rgba(207, 207, 207, 0.067);
+    margin: 0;
+    padding: 0;
+}
+
+.side-element {
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.side-element:hover {
+    background: rgba(217, 217, 217, 0.20);
+    cursor: pointer;
+}
+
+.btn-danger {
+    height: 40px;
+    width: 130px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.welcome-visitor {
+    color: #121853;
+    font-size: 16px;
+    background: #417bc22a;
+    height: 100%;
+
+}
+
+.content-header {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #417CC2;
+    height: 100%;
+}
+
+.main {
+    border: 1px solid #cfcfcf;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+#emails-view {
+    padding: 0;
+}
+
+
+.header {
+    border: 0.5px solid #d9d9d9;
+}
+
+
+.form-content {
+    border: 0.5px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.form-content {
+    height: 40px;
+
+}
+
+.mail-text {
+    height: 50px;
+}
+
+.form-from {
+    background-color: white;
+    padding-left: 10px;
+}
+
+.form-from div {
+    padding-left: 10px;
+    color: #b6b5b5;
+}
+
+
+.email-details {
+    padding: 20px;
+    margin: 20px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+
+.email-detail-group{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.email-detail-button{
+    margin: 20px;
+}
+
+
+.header{background-color: white; box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);}
+
+
+.e-mail-detail-view-area{
+    background-color: white;
+}
+
+.login-form-page{
+    background-color: white;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    margin: 10% auto;
+    width: 480px;
+    border: 0.5px solid #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+body{
+    background: radial-gradient(#b6bbf0, #ecebee);
+}
+
+
+.compose-btn{
+   
+    width: 120px;
+    border: none;
+}
+
+.btn-inpt{
+    width: 100%;
+}
